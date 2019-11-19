@@ -2,8 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 
 
-const PORT = 3000
-
+const PORT = require('./config/properties').PORT;
 
 // initialize our express app
 const app = express();
