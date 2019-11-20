@@ -21,12 +21,13 @@ Following package and library have to install into your machine to run this app
 1. clone this repository 
 2. go to project directory and run `npm install --save`
 3. run `npm start`
-*Note: I use MongoDB database from my local machine, You can use MLab for instant MongoDB DB for testing*
+
+###### *Note: I use MongoDB database from my local machine, You can use MLab for instant MongoDB DB for testing*
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Authors
 
-* **Nahid Babu** - 
+* **Nahid Babu** -
 
