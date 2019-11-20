@@ -10,4 +10,4 @@ var BookSchema = new Schema({
 
 
 // Export the model
-module.exports = mongoose.model('Product', BookSchema);
+module.exports = mongoose.model('Book', BookSchema);
