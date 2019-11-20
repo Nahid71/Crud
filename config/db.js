@@ -6,21 +6,24 @@ var mongoose = require('mongoose');
 //require database URL from properties file
 var dbURL = require('./properties').DB;
 
-var connected = chalk.bold.cyan;
-var error = chalk.bold.yellow;
-var disconnected = chalk.bold.red;
-var termination = chalk.bold.magenta;
 
-//export this function and imported by server.js
-module.exports = function () {
 
-  mongoose.connect(dbURL, { useNewUrlParser: true }, (error) => {
-    if (!error) {
-      console.log("DB connection is success")
-    }
-    else {
-      console.log("DB not connected!!")
-    }
+//export this function 
+module.exports =function(){
+
+  mongoose.connect(dbURL);
+
+  mongoose.connection.on('connected', function(){
+      console.log("Mongoose default connection is open to ", dbURL);
   });
 
+  mongoose.connection.on('error', function(err){
+      console.log("Mongoose default connection has occured  error");
+  });
+
+  mongoose.connection.on('disconnected', function(){
+      console.log("Mongoose default connection is disconnected");
+  });
+
+  
 }
