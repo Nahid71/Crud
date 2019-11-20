@@ -1,8 +1,8 @@
-var book = require('../models/book');
+let Book = require('../models/book');
 
 
 exports.create = function (req, res) {
-    var book = new Book(
+    let book = new Book(
         {
             name: req.body.name,
             price: req.body.price
@@ -25,7 +25,7 @@ exports.details = function (req, res) {
 };
 
 exports.update = function (req, res) {
-    Book.findByIdAndUpdate(req.params.id, {$set: req.body}, function (err, book) {
+    Book.findByIdAndUpdate(req.params.id, { $set: req.body }, function (err, book) {
         if (err) return next(err);
         res.send('book udpated.');
     });

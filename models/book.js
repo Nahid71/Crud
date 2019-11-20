@@ -1,11 +1,11 @@
-var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
+let mongoose = require('mongoose');
+let Schema = mongoose.Schema;
 
 // Creating book schema
-var BookSchema = new Schema({
-    name: {type: String, required: true, max: 100},
-    author: {type: String, required: true, max: 100},
-    price: {type: Number, required: true},
+let BookSchema = new Schema({
+  name: { type: String, required: true, max: 100 },
+  author: { type: String, required: true, max: 100 },
+  price: { type: Number, required: true },
 });
 
 

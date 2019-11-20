@@ -1,8 +1,8 @@
-var express = require('express');
-var router = express.Router();
+let express = require('express');
+let router = express.Router();
 
 
-var controller = require('../controllers/book');
+let controller = require('../controllers/book');
 
 
 

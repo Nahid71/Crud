@@ -27,9 +27,9 @@ Following package and library have to install into your machine to run this app
 
 
 
-## Authors
+## Author
 
-* **Nahid Babu** -
+ **Nahid Babu**
 
 ## License
 
