@@ -3,7 +3,7 @@
 ## Description
 
 It is a simple CRUD application. I develop this app using Node.js and MongoDB.
-Actually it's not for any working types applicaton, I create this app for a programming test.
+
 
 
 ### Prerequisites
